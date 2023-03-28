@@ -9,8 +9,7 @@ public class CelebrityRunner {
 	 * @param args Unused parameter as it is a GUI based program.
 	 */
 	public static void main(String [] args) {
-		Celebrity cel = new Celebrity("Big Bird", "From Sesame Street, covered in yellow feathers");
-		System.out.println(cel); // test toString
+		CelebrityGame game = new CelebrityGame();
 
 	}
 }

@@ -10,20 +10,25 @@ public class CelebrityGame {
 	/**
 	 * A reference to a Celebrity or subclass instance.
 	 */
+	private Celebrity gameCelebrity;
 
 	/**
 	 * The GUI frame for the Celebrity game.
 	 */
+	CelebrityFrame gameWindow;
 
 	/**
 	 * The ArrayList of Celebrity values that make up the game
 	 */
+	private ArrayList<Celebrity> celebGameList;
 
 	/**
 	 * Builds the game and starts the GUI
 	 */
 	public CelebrityGame() {
-
+		celebGameList = new ArrayList<>();
+		gameCelebrity = null;
+		gameWindow = new CelebrityFrame(this);
 	}
 
 	/**
